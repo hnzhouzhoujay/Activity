@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.baimi.activiti.dao.UserDao">  
+    <cache type="PERPETUAL" eviction="LRU" flushInterval="60000"  
+        size="512" readOnly="true" />  
+    <resultMap id="userResultMap" type="user">  
+        <id property="id" column="user_id" />  
+        <result property="name" column="user_name" />  
+        <result property="age" column="user_age" />  
+        <result property="birthday" column="user_birthday" />
+        <result property="applyUserId" column="applyUserId" />
+        <result property="applyTime" column="applyTime" />
+        <result property="processInstanceId" column="processInstanceId" />
+        <result property="processDefineId" column="processDefineId" />
+        <result property="taskId" column="taskId" />
+    </resultMap>  
+   <!-- <sql id="userColumns"> userid,username,password </sql>  -->
+    <select id="queryAll"  resultType="list"  resultMap="userResultMap" 
+        useCache="false">  
+        select  *  from t_user
+    </select>  
+      <select id="queryUser" parameterType="string" resultType="user"     resultMap="userResultMap" 
+        useCache="false">  
+        select  *  from t_user where user_name=#{name}
+    </select>  
+     <select id="queryUserById" parameterType="_int" resultType="user"     resultMap="userResultMap" 
+        useCache="false">  
+        select  *  from t_user where user_id=#{id}
+    </select>  
+    <insert id="insertUser" parameterType="user" >  
+        insert into t_user (user_id,user_name,user_age,user_birthday,applyUserId,applyTime,processInstanceId,processDefineId,taskId)  
+        values (#{id},#{name},#{age},#{birthday},#{applyUserId},#{applyTime},#{processInstanceId},#{processDefineId},#{taskId})  
+        <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id" >
+       SELECT LAST_INSERT_ID() as id
+    	</selectKey>
+    </insert>  
+    <update id="updateUser" parameterType="user">  
+        update t_user set  
+        user_name= #{name},  
+        user_age = #{age},
+        user_birthday=#{birthday},
+        applyTime=#{applyTime},
+        processInstanceId=#{processInstanceId},
+        processDefineId=#{processDefineId},
+        taskId=#{taskId}
+        where user_id = #{id}  
+    </update>  
+    <delete id="deleteUser" parameterType="user">  
+        delete from t_user where user_id = #{id}  
+    </delete>  
+</mapper>
