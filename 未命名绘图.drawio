@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T02:57:05.651Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ktn8hBbb0G3aKZDdaPzc" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T06:52:09.448Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5jeBs4MIrxG7Tf3rshSo" version="22.1.18" type="github">
   <diagram name="第 1 页" id="23eDjn6sSCtbQLzArtbT">
     <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -94,29 +94,38 @@
         <mxCell id="amsWNtKq7_Y3dCARKuHN-69" value="读取视频媒体信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="510" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-71" value="调用素材库入口接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-71" value="调用云制播入库接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="510" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-73" target="amsWNtKq7_Y3dCARKuHN-74">
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-83" target="amsWNtKq7_Y3dCARKuHN-84">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-73" value="增量同步" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-83" value="上传" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-74" target="amsWNtKq7_Y3dCARKuHN-76">
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-84" target="amsWNtKq7_Y3dCARKuHN-86">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-74" value="接收云制播消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-84" value="上传文件，记录日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="610" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-76" target="amsWNtKq7_Y3dCARKuHN-81">
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-86" value="操作完成,回调通知" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-89" target="amsWNtKq7_Y3dCARKuHN-91">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-76" value="将文件从云存储复制到聚宝盆本地存储" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-89" value="下载" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="amsWNtKq7_Y3dCARKuHN-81" value="回调通知,通知进度信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amsWNtKq7_Y3dCARKuHN-91" target="amsWNtKq7_Y3dCARKuHN-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-91" value="下载文件，记录日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="amsWNtKq7_Y3dCARKuHN-92" value="操作完成,回调通知" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="700" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
