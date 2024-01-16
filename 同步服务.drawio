@@ -1,9 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T03:09:34.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.18" etag="rwicy_ex3TIxa3BhfNyu" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T03:19:21.471Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qUpY5y2VWnYcERjC6p3a" version="22.1.18" type="github">
   <diagram name="第 1 页" id="L94UI-FPSlUIYbdBUqpu">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--4" target="7OC_n5KA9Acu8J5wAEc--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--4" value="增量同步" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--5" target="7OC_n5KA9Acu8J5wAEc--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--5" value="接收云制播消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--9" target="7OC_n5KA9Acu8J5wAEc--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--9" value="将文件从云存储复制到聚宝盆本地存储" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--11" value="回调通知,通知进度信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--13" target="7OC_n5KA9Acu8J5wAEc--15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--13" value="监控告警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--14" target="7OC_n5KA9Acu8J5wAEc--19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--14" value="服务监控告警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7OC_n5KA9Acu8J5wAEc--15" target="7OC_n5KA9Acu8J5wAEc--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--15" value="本地存储状态监控告警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--17" value="复制文件失败告警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7OC_n5KA9Acu8J5wAEc--19" value="检查服务是否正常" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
