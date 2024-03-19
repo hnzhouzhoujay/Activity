@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T02:42:46.729Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="TUNq6U9-tQxmy5ZLFGLe" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T02:52:43.821Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="rpJQhz6iQ3XlKO1o8wS2" version="24.0.7" type="github">
   <diagram name="Page-1" id="c7488fd3-1785-93aa-aadb-54a6760d102a">
     <mxGraphModel dx="2517" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="tengJyLDdq9zpTRYQfLY-16" value="版权下发" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-14">
           <mxGeometry x="290" y="70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-24" value="读取版权CP信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-14">
+        <mxCell id="tengJyLDdq9zpTRYQfLY-24" value="读取版权CP信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-14">
           <mxGeometry x="470" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-17" value="" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -28,8 +28,11 @@
         <mxCell id="tengJyLDdq9zpTRYQfLY-18" value="合集版权信息变更" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-17">
           <mxGeometry x="290" y="70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-19" value="通知同步服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-17">
+        <mxCell id="tengJyLDdq9zpTRYQfLY-19" value="发送合集变更类型的消息，通知同步服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-17">
           <mxGeometry x="100" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tengJyLDdq9zpTRYQfLY-59" value="接口调用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-17">
+          <mxGeometry x="490" y="68" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-20" value="" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="480" width="960" height="200" as="geometry" />
@@ -37,26 +40,26 @@
         <mxCell id="tengJyLDdq9zpTRYQfLY-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="tengJyLDdq9zpTRYQfLY-20" source="tengJyLDdq9zpTRYQfLY-21" target="tengJyLDdq9zpTRYQfLY-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-21" value="合集变更" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
+        <mxCell id="tengJyLDdq9zpTRYQfLY-21" value="合集变更处理,修改mgmd数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
           <mxGeometry x="100" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="tengJyLDdq9zpTRYQfLY-20" source="tengJyLDdq9zpTRYQfLY-22" target="tengJyLDdq9zpTRYQfLY-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-22" value="合集mgmd binlog消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
+        <mxCell id="tengJyLDdq9zpTRYQfLY-22" value="监听合集mgmd binlog消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
           <mxGeometry x="290" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="tengJyLDdq9zpTRYQfLY-20" source="tengJyLDdq9zpTRYQfLY-23" target="tengJyLDdq9zpTRYQfLY-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-23" value="拉取合集版权CP信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
+        <mxCell id="tengJyLDdq9zpTRYQfLY-23" value="拉取合集版权CP信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
           <mxGeometry x="470" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="tengJyLDdq9zpTRYQfLY-20" source="tengJyLDdq9zpTRYQfLY-28" target="tengJyLDdq9zpTRYQfLY-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tengJyLDdq9zpTRYQfLY-28" value="入库,插入合集变更队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
-          <mxGeometry x="670" y="70" width="120" height="60" as="geometry" />
+        <mxCell id="tengJyLDdq9zpTRYQfLY-28" value="信息入库,插入合集变更队列" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
+          <mxGeometry x="660" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-55" value="插入合集变更表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-20">
           <mxGeometry x="830" y="70" width="120" height="60" as="geometry" />
@@ -74,7 +77,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-42" value="" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="680" width="960" height="200" as="geometry" />
+          <mxGeometry x="60" y="680" width="960" height="190" as="geometry" />
         </mxCell>
         <mxCell id="tengJyLDdq9zpTRYQfLY-49" value="读取变更表，拉取合集版权CP信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tengJyLDdq9zpTRYQfLY-42">
           <mxGeometry x="830" y="70" width="120" height="60" as="geometry" />
